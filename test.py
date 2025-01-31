@@ -11,6 +11,9 @@ def ocr_on_images_paddle(folder_path):
         results[img_file] = result
     return results
 
-for i in range(0,100):
+print("Start program")
+for i in range(0,1):
+    print(f'iteration -> {i}')
     ocrPaddle = PaddleOCR(use_angle_cls=True, lang="es")
     result = ocrPaddle.ocr('Cedula_David_Martinez_page-0001.jpg', cls=True)
+print("Finish program")
